@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub eCommerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkBy8JRJVTRayqtduriksP5agMpCwjSKArQ&amp;s">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-store"></i>
+                <h2>ShopHub</h2>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                <span class="icon"><i class="far fa-heart"></i></span>
+                <span class="icon"><i class="far fa-user"></i></span>
+            </div>
+        </nav>
+    </header>
+
+    <!--  Hero Section -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide slide-1 active">
+                <div class="slide-overlay"></div>                <div class="slide-content">
+                    <h1 class="slide-title">Discover Your Style</h1>
+                    <p class="slide-subtitle">Shop the latest trends with exclusive deals and free shipping on orders over $50</p>
+                    <button class="btn-primary btn-large">Shop Now</button>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">New Arrivals</h1>
+                    <p class="slide-subtitle">Explore our latest collection of premium fashion and accessories</p>
+                    <button class="btn-primary btn-large">Explore Now</button>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Exclusive Deals</h1>
+                    <p class="slide-subtitle">Up to 50% off on selected items. Limited time offer!</p>
+                    <button class="btn-primary btn-large">Shop Deals</button>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Sports & Fitness</h1>
+                    <p class="slide-subtitle">Get active with our premium sports equipment and gear</p>
+                    <button class="btn-primary btn-large">Shop Sports</button>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Beauty & Cosmetics</h1>
+                    <p class="slide-subtitle">Discover premium beauty products for your perfect look</p>
+                    <button class="btn-primary btn-large">Shop Beauty</button>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Featured Products</h2>
+            <div class="featured-grid animate-on-scroll">
+                <div class="product-card featured">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&h=500&fit=crop" alt="Premium Blazer">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Blazer</h3>
+                        <p class="product-desc">Elegant formal wear</p>
+                        <div class="product-footer">
+                            <span class="price">$149.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="product-badge sale">Sale</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop" alt="Smart Watch Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch Pro</h3>
+                        <p class="product-desc">Latest technology</p>
+                        <div class="product-footer">
+                            <span class="price">$299.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <div class="product-badge">Hot</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop" alt="Running Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3>Running Shoes</h3>
+                        <p class="product-desc">Comfort & performance</p>
+                        <div class="product-footer">
+                            <span class="price">$89.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Shop by Category</h2>
+            <div class="categories-grid animate-scale-in">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop" alt="Fashion">
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>Latest trends</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop" alt="Electronics">
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>Tech essentials</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=300&fit=crop" alt="Watches">
+                    </div>
+                    <h3>Watches</h3>
+                    <p>Timeless elegance</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop" alt="Sports">
+                    </div>
+                    <h3>Sports</h3>
+                    <p>Active lifestyle</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&h=300&fit=crop" alt="Books">
+                    </div>
+                    <h3>Books</h3>
+                    <p>Knowledge hub</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=300&fit=crop" alt="Art & Crafts">
+                    </div>
+                    <h3>Art & Crafts</h3>
+                    <p>Creative supplies</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" alt="Beauty">
+                    </div>
+                    <h3>Beauty</h3>
+                    <p>Cosmetics & care</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=300&fit=crop" alt="Jewelry">
+                    </div>
+                    <h3>Jewelry</h3>
+                    <p>Elegant accessories</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1558060370-d644479cb6f7?w=400&h=300&fit=crop" alt="Toys & Games">
+                    </div>
+                    <h3>Toys & Games</h3>
+                    <p>Fun for all ages</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=300&fit=crop" alt="Footwear">
+                    </div>
+                    <h3>Footwear</h3>
+                    <p>Step in style</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products" id="shop">
+        <div class="container">
+            <h2 class="section-title animate-slide-left">All Products</h2>
+            <div class="products-grid animate-slide-right">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&h=500&fit=crop" alt="Summer Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Summer Dress</h3>
+                        <p class="product-desc">Light & comfortable</p>
+                        <div class="product-footer">
+                            <span class="price">$59.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop" alt="Wireless Headphones">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-desc">Premium sound quality</p>
+                        <div class="product-footer">
+                            <span class="price">$129.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop" alt="Leather Handbag">
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Handbag</h3>
+                        <p class="product-desc">Elegant & spacious</p>
+                        <div class="product-footer">
+                            <span class="price">$179.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&h=500&fit=crop" alt="Smartphone Case">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone Case</h3>
+                        <p class="product-desc">Protective & stylish</p>
+                        <div class="product-footer">
+                            <span class="price">$24.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&h=500&fit=crop" alt="Sunglasses">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sunglasses</h3>
+                        <p class="product-desc">UV protection</p>
+                        <div class="product-footer">
+                            <span class="price">$79.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&h=500&fit=crop" alt="Makeup Set">
+                    </div>
+                    <div class="product-info">
+                        <h3>Makeup Set</h3>
+                        <p class="product-desc">Professional quality</p>
+                        <div class="product-footer">
+                            <span class="price">$49.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop" alt="Travel Backpack">
+                    </div>
+                    <div class="product-info">
+                        <h3>Travel Backpack</h3>
+                        <p class="product-desc">Durable & spacious</p>
+                        <div class="product-footer">
+                            <span class="price">$99.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&h=500&fit=crop" alt="Fitness Equipment">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fitness Equipment</h3>
+                        <p class="product-desc">Home workout essentials</p>
+                        <div class="product-footer">
+                            <span class="price">$199.99</span>
+                            <button class="btn-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-bounce-in">What Our Customers Say</h2>
+            <div class="testimonials-grid animate-stagger">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Amazing quality and fast shipping! The products exceeded my expectations. Will definitely shop here again."</p>
+                    <div class="customer-info">
+                        <div class="customer-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Johnson">
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p class="customer-role">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Best online shopping experience! Great customer service and the return process was hassle-free."</p>
+                    <div class="customer-info">
+                        <div class="customer-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Michael Chen">
+                        </div>
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p class="customer-role">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Love the variety of products! Everything is exactly as described. Highly recommend this store."</p>
+                    <div class="customer-info">
+                        <div class="customer-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Emily Rodriguez">
+                        </div>
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p class="customer-role">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Join Our Newsletter</h2>
+            <p>Get exclusive deals, new arrivals, and special offers delivered to your inbox</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" class="email-input">
+                <button class="btn-primary">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>ShopHub</h3>
+                    <p>Your one-stop destination for quality products and exceptional service. Shop with confidence.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/15Lde1bFXpF/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/its_zaibi_7?igsh=dmR2ZjU3eDR4bXBy" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/shahzaib-malik-262b3335b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> shahzaibmalik0409@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i>+92 307 6492467</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Shop Street, NY 10001</li>
+                        <li><i class="fas fa-business-time"></i> Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopHub. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/home.js"></script>
+</body>
+</html>
