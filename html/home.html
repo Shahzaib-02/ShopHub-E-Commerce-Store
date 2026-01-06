@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopHub eCommerce Store</title>
+    <title>ShopHub E-Commerce Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
- <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkBy8JRJVTRayqtduriksP5agMpCwjSKArQ&amp;s">
-
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkBy8JRJVTRayqtduriksP5agMpCwjSKArQ&amp;s">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      
+    </style>
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    
     <!-- Navigation Header -->
     <header class="header">
         <nav class="navbar">
@@ -32,18 +33,24 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-icons">
-                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
-                <span class="icon"><i class="far fa-heart"></i></span>
-                <span class="icon"><i class="far fa-user"></i></span>
+                <span class="icon"><a href="./cart.html"><i class="fas fa-shopping-cart"></i></a></span>
+                <div class="user-menu">
+                    <span class="icon" id="userMenuButton" title="Account"><i class="far fa-user"></i></span>
+                    <div class="user-dropdown" id="userDropdown">
+                        <div class="user-dropdown-name" id="userDropdownName"></div>
+                        <a class="user-dropdown-link" id="userLoginLink" href="./form.html">Login / Sign up</a>
+                        <button class="user-dropdown-link logout" id="userLogoutButton" type="button">Logout</button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-
     <!--  Hero Section -->
     <section class="hero-slider" id="home">
         <div class="slider-container">
             <div class="slide slide-1 active">
-                <div class="slide-overlay"></div>                <div class="slide-content">
+                <div class="slide-overlay"></div> 
+                               <div class="slide-content">
                     <h1 class="slide-title">Discover Your Style</h1>
                     <p class="slide-subtitle">Shop the latest trends with exclusive deals and free shipping on orders over $50</p>
                     <button class="btn-primary btn-large">Shop Now</button>
@@ -109,8 +116,8 @@
                         <h3>Premium Blazer</h3>
                         <p class="product-desc">Elegant formal wear</p>
                         <div class="product-footer">
-                            <span class="price">$149.99</span>
-                            <button class="btn-cart">Add to Cart</button>
+                            <span class="price">$99.99</span>
+                            <button class="btn-cart" >Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -123,7 +130,7 @@
                         <h3>Smart Watch Pro</h3>
                         <p class="product-desc">Latest technology</p>
                         <div class="product-footer">
-                            <span class="price">$299.99</span>
+                            <span class="price">$99.99</span>
                             <button class="btn-cart">Add to Cart</button>
                         </div>
                     </div>
@@ -248,11 +255,11 @@
                         <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop" alt="Wireless Headphones">
                     </div>
                     <div class="product-info">
-                        <h3>Wireless Headphones</h3>
+                        <h3>Headphones</h3>
                         <p class="product-desc">Premium sound quality</p>
                         <div class="product-footer">
-                            <span class="price">$129.99</span>
-                            <button class="btn-cart">Add to Cart</button>
+                            <span class="price">$98.99</span>
+                            <button class="btn-cart ">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -264,7 +271,7 @@
                         <h3>Leather Handbag</h3>
                         <p class="product-desc">Elegant & spacious</p>
                         <div class="product-footer">
-                            <span class="price">$179.99</span>
+                            <span class="price">$90.99</span>
                             <button class="btn-cart">Add to Cart</button>
                         </div>
                     </div>
@@ -329,7 +336,7 @@
                         <h3>Fitness Equipment</h3>
                         <p class="product-desc">Home workout essentials</p>
                         <div class="product-footer">
-                            <span class="price">$199.99</span>
+                            <span class="price">$99.99</span>
                             <button class="btn-cart">Add to Cart</button>
                         </div>
                     </div>
